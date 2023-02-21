@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    app:layoutDescription="@xml/motion_sample_layout_scene"
+    tools:context=".MotionLayoutSampleActivity">
+
+    <ImageView
+        android:id="@+id/ivBrightness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/brightness_slider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/ivInternet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/setting_internet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivBrightness"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/ivRotation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/setting_rotation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivInternet"
+        app:layout_constraintTop_toTopOf="@id/ivInternet"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/ivTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/setting_theme"
+        app:layout_constraintStart_toStartOf="@id/ivInternet"
+        app:layout_constraintTop_toBottomOf="@id/ivInternet"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/ivConnection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/setting_connection"
+        app:layout_constraintEnd_toEndOf="@id/ivRotation"
+        app:layout_constraintStart_toStartOf="@id/ivRotation"
+        app:layout_constraintTop_toTopOf="@id/ivTheme"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/ivWallet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/setting_wallet"
+        app:layout_constraintStart_toStartOf="@id/ivInternet"
+        app:layout_constraintTop_toBottomOf="@id/ivTheme"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/ivBluetooth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/setting_bluetooth"
+        app:layout_constraintEnd_toEndOf="@id/ivConnection"
+        app:layout_constraintStart_toStartOf="@id/ivConnection"
+        app:layout_constraintTop_toTopOf="@id/ivWallet"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/ivMedia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/media"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivWallet"
+        tools:ignore="ContentDescription" />
+</androidx.constraintlayout.motion.widget.MotionLayout>
